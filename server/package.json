@@ -1,0 +1,36 @@
+{
+  "name": "svelte-koa-seed",
+  "version": "1.0.0",
+  "description": "Svelte Koa Seed",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon src/app.js --exec 'npm run lint && node'",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "pm2 start src/app.js"
+  },
+  "keywords": [
+    "Koa"
+  ],
+  "author": "Pasham Akhil Kumar Reddy <pashamakhilkumarreddy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.12.0",
+    "koa-body": "^4.1.3",
+    "koa-compress": "^4.0.1",
+    "koa-helmet": "^5.2.0",
+    "koa-router": "^9.0.1",
+    "mongoose": "^5.9.17",
+    "pm2": "^4.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.4"
+  }
+}
